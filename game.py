@@ -1,7 +1,7 @@
-# i didnt want to finish the last stage bc i didnt want to :D
+
 import random as r
 
-name = input("Enter your name:")   #ask for name
+name = input("Enter your name:")
 print("Hello,",name)
 newName = False
 d = {}
@@ -22,7 +22,7 @@ if name not in d: #initalize them if they don't already exist --add them to file
 player = ""
 
 
-while player != "!exit": #yes the code could've been condensed using arrays and in the in operator
+while player != "!exit": #yes ik the code could've been condensed using arrays and in the in operator
     player = input()
     player = player.lower()
     if player == "scissors" or player == "paper" or player == "rock":
@@ -62,7 +62,7 @@ if newName:
         with open('rating.txt','a') as f:
             f.write(name+" "+str(d[name])+"\n")
             f.close()
-else:   # write overwrite rating file at just that line OR rewrite it and keep everything except that line
+else:   
         with open('rating.txt','wt') as new:
             for key in d:
                 new.write(key+" "+str(d[key])+"\n")
