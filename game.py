@@ -1,4 +1,4 @@
-# Write your code here
+# i didnt want to finish the last stage bc i didnt want to :D
 import random as r
 
 name = input("Enter your name:")   #ask for name
@@ -22,7 +22,7 @@ if name not in d: #initalize them if they don't already exist --add them to file
 player = ""
 
 
-while player != "!exit": #yes the code could be condensed but do i care? no. should i? probably lol
+while player != "!exit": #yes the code could've been condensed using arrays and in the in operator
     player = input()
     player = player.lower()
     if player == "scissors" or player == "paper" or player == "rock":
